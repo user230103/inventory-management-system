@@ -1,13 +1,15 @@
 const express = require('express');
 const app = express();
+const productRoutes = require('./routes/productRoutes');
 
-// Middleware để đọc dữ liệu JSON từ request body
 app.use(express.json());
 
-// Route test cơ bản
+// Gắn các route liên quan đến sản phẩm vào tiền tố /api/products
+app.use('/api/products', productRoutes);
+
+// Route test dự phòng ở gốc
 app.get('/', (req, res) => {
-    res.send('Hello API');
+    res.send('Server is running smoothly!');
 });
 
-// Xuất app ra để server.js hoặc file test có thể dùng
 module.exports = app;
