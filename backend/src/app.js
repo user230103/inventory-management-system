@@ -9,5 +9,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`🚀 Server đang chạy cực mượt tại: http://localhost:${PORT}`);
+    console.log(`Server running at: http://localhost:${PORT}`);
 });
