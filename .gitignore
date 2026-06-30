@@ -1,0 +1,12 @@
+# Bỏ qua thư mục cài đặt thư viện của Node.js (Nặng nhất, không bao giờ push)
+backend/node_modules/
+node_modules/
+dist/
+
+# Bỏ qua các file cấu hình môi trường chứa mật khẩu, bí mật hệ thống (Giai đoạn sau sẽ dùng)
+.env
+.env.local
+
+# Bỏ qua các file rác tự sinh của hệ điều hành
+.DS_Store
+Thumbs.db
