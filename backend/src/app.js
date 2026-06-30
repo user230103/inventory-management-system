@@ -1,13 +1,13 @@
 const express = require('express');
 const app = express();
-const PORT = 3000;
 
+// Middleware để đọc dữ liệu JSON từ request body
 app.use(express.json());
 
+// Route test cơ bản
 app.get('/', (req, res) => {
     res.send('Hello API');
 });
 
-app.listen(PORT, () => {
-    console.log(`Server running at: http://localhost:${PORT}`);
-});
+// Xuất app ra để server.js hoặc file test có thể dùng
+module.exports = app;
