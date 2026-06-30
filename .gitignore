@@ -1,12 +1,24 @@
-# Bỏ qua thư mục cài đặt thư viện của Node.js (Nặng nhất, không bao giờ push)
-backend/node_modules/
+# ==========================================
+# 📦 NODE / PACKAGES (Thư mục thư viện rất nặng)
+# ==========================================
 node_modules/
+backend/node_modules/
 dist/
 
-# Bỏ qua các file cấu hình môi trường chứa mật khẩu, bí mật hệ thống (Giai đoạn sau sẽ dùng)
+# ==========================================
+# 🔒 SECURITY / ENVIRONMENT (Bảo mật mật khẩu, Token)
+# ==========================================
 .env
 .env.local
+backend/.env
 
-# Bỏ qua các file rác tự sinh của hệ điều hành
+# ==========================================
+# 🛠️ PRISMA / GENERATED FILES (File tự sinh)
+# ==========================================
+backend/src/generated/prisma/
+
+# ==========================================
+# 🗑️ OS TRASH (File rác của hệ điều hành)
+# ==========================================
 .DS_Store
 Thumbs.db
